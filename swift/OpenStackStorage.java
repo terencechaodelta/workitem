@@ -393,7 +393,21 @@ public class OpenStackStorage extends AbstractStorage {
 		return null;
 	}
 	
-	// get file
+	/*
+	 * 以下三個API有但不確定會不會用到先保留不實作
+	 * 第一個method跟Dennis詢問stream播放有關，因為官方API有支援HTTP Range Request可以用在某些播放器或HTML5 video tag
+	public byte[] getObject(String objectUrl, String rangeCommand) {
+		return null;
+	}
+	
+	public Map<String, String> headObject(String objectUrl) {
+		return null;
+	}
+	
+	public void postObjectMetadata(String objectUrl, Map<String, String> metadatas) {
+		
+	}
+	*/
 	
 	public class SwiftRestAPIResult {
 		SwiftRestAPIResult() {}
